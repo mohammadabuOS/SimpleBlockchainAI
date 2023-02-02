@@ -35,7 +35,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Simple Blockchain AI</title>
-        <link rel="icon" href="/dog.png" />
+        <link rel="icon" href="/blockchain_logo.png" />
       </Head>
 
       <main className={styles.main}>
