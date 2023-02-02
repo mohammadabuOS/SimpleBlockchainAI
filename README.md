@@ -1,4 +1,4 @@
-# About
+## About
 
 This is a web application using the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
 
