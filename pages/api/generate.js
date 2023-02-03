@@ -16,14 +16,25 @@ export default async function (req, res) {
   }
 
   const animal = req.body.animal || '';
+
   if (animal.trim().length === 0) {
     res.status(400).json({
       error: {
-        message: "Please enter a non-blank input",
+        message: "Please enter a value",
       }
     });
     return;
   }
+
+  // validation for special characters for future
+  // else if (animal.trim().length === 0) {
+  //   res.status(400).json({
+  //     error: {
+  //       message: "Please do not use special characters",
+  //     }
+  //   });
+  //   return;
+  // }
 
   try {
     const completion = await openai.createCompletion({
@@ -63,8 +74,6 @@ Names: Bored Ape Yacht Club, Monkey Moons, OnChainChimps
 Animal: ${capitalizedAnimal}
 Names:`;
 }
-
-// Suggest three names for an NFT project based on memes. 
 
 // original prompt
 // function generatePrompt(animal) {

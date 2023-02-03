@@ -40,7 +40,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <img src="/blockchain_animal.gif" />
-        <h3>Name my NFT project</h3>
+        <h3>Create an NFT project using AI!</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
@@ -49,7 +49,7 @@ export default function Home() {
             value={animalInput}
             onChange={(e) => setAnimalInput(e.target.value)}
           />
-          <input type="submit" value="Generate Names" />
+          <input type="submit" value="Generate" />
         </form>
         <div className={styles.result}>{result}</div>
       </main>
